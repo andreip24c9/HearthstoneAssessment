@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HearthstoneAssesment</string>
+    <string name="content_description_card_thumbnail">Card thumbnail</string>
+    <string name="unown_error_title">Oh no!</string>
+    <string name="unown_error_body">Well this is embarrassing …\nAn unexpected error occurred. Please try again later!</string>
+    <string name="empty_error_title">No cards available</string>
+    <string name="empty_error_body">At the moment there are no cards available for the selected set.\nPlease try again later!</string>
+    <string name="retry_btn">Retry</string>
+    <string name="type_label">Type</string>
+    <string name="rarity_label">Rarity</string>
+    <string name="card_set_label">Card set</string>
+    <string name="cost_label">Cost</string>
+    <string name="player_class_label">Player class</string>
+    <string name="collectible_label">Collectible</string>
+</resources>

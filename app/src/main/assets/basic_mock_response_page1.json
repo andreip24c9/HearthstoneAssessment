@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "cardId": "GAME_004",
+      "name": "AFK",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Your turns are shorter.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_041e",
+      "name": "Ancestral Infusion",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Taunt.",
+      "playerClass": "Shaman",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    {
+      "cardId": "HERO_09",
+      "name": "Anduin Wrynn",
+      "cardSet": "Basic",
+      "type": "Hero",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "health": 30,
+      "collectible": true,
+      "playerClass": "Priest",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_09.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_09_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_399e",
+      "name": "Berserking",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "This minion has increased Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_092e",
+      "name": "Blessing of Kings",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+4/+4.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_087e",
+      "name": "Blessing of Might",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "faction": "Neutral",
+      "text": "+3 Attack.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_046e",
+      "name": "Bloodlust",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+3 Attack this turn.",
+      "playerClass": "Shaman",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_084e",
+      "name": "Charge",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Warsong Commander is granting this minion +1 Attack.",
+      "playerClass": "Warrior",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "DS1_178e",
+      "name": "Charge",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Tundra Rhino grants <b>Charge</b>.",
+      "playerClass": "Hunter",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_103e2",
+      "name": "Charge",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Has <b>Charge</b>.",
+      "playerClass": "Warrior",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_005o",
+      "name": "Claw",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+2 Attack this turn.",
+      "playerClass": "Druid",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "CS2_017o",
+      "name": "Claws",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Your hero has +1 Attack this turn.",
+      "playerClass": "Druid",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_019e",
+      "name": "Cleric's Blessing",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+1/+1.",
+      "playerClass": "Priest",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "GAME_003",
+      "name": "Coin's Vengeance",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Going second makes your first minion stronger.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "GAME_003e",
+      "name": "Coin's Vengence",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Going second makes your first minion stronger.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_063e",
+      "name": "Corruption",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "At the start of the corrupting player's turn, destroy this minion.",
+      "playerClass": "Warlock",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_074e",
+      "name": "Deadly Poison",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+2 Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_236e",
+      "name": "Divine Spirit",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "This minion has double Health.",
+      "playerClass": "Priest",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_122e",
+      "name": "Enhanced",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Raid Leader is granting this minion +1 Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_033o",
+      "name": "Eye In The Sky",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Leokk is granting this minion +1 Attack.",
+      "playerClass": "Hunter",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_565o",
+      "name": "Flametongue",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+2 Attack from Flametongue Totem.",
+      "playerClass": "Shaman",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "hexfrog",
+      "name": "Frog",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "attack": 0,
+      "health": 1,
+      "text": "<b>Taunt</b>",
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/hexfrog.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/hexfrog_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Taunt"
+        }
+      ]
+    },
+    {
+      "cardId": "CS2_226e",
+      "name": "Frostwolf Banner",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Increased stats.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "DS1_175o",
+      "name": "Furious Howl",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+1 Attack from Timber Wolf.",
+      "playerClass": "Hunter",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "HERO_01",
+      "name": "Garrosh Hellscream",
+      "cardSet": "Basic",
+      "type": "Hero",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "health": 30,
+      "collectible": true,
+      "playerClass": "Warrior",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_01.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_01_premium.gif",
+      "locale": "enUS"
+    }
+  ],
+  "meta": {
+    "count": 25,
+    "pagination": {
+      "next_cursor": "value_of_the_next_cursor_mock",
+      "limit": 25
+    }
+  }
+}

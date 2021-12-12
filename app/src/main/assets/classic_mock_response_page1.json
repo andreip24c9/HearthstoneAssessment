@@ -1,0 +1,332 @@
+{
+  "data": [
+    {
+      "cardId": "NEW1_008a",
+      "name": "Ancient Teachings",
+      "cardSet": "Classic",
+      "type": "Spell",
+      "cost": 0,
+      "text": "Draw a card.",
+      "playerClass": "Druid",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/NEW1_008a.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/NEW1_008a_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_165b",
+      "name": "Bear Form",
+      "cardSet": "Classic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 0,
+      "text": "+2 Health and <b>Taunt</b>.",
+      "playerClass": "Druid",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_165b.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_165b_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_231",
+      "name": "Wisp",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 0,
+      "attack": 1,
+      "health": 1,
+      "flavor": "If you hit an Eredar Lord with enough Wisps, it will explode.   But why?",
+      "artist": "Malcolm Davis",
+      "collectible": true,
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_231.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_231_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_188",
+      "name": "Abusive Sergeant",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "faction": "Alliance",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "<b>Battlecry:</b> Give a minion +2_Attack this turn.",
+      "flavor": "ADD ME TO YOUR DECK, MAGGOT!",
+      "artist": "Luca Zontini",
+      "collectible": true,
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_188.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_188_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_009",
+      "name": "Angry Chicken",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "rarity": "Rare",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "<b>Enrage:</b> +5 Attack.",
+      "flavor": "There is no beast more frightening (or ridiculous) than a fully enraged chicken.",
+      "artist": "Mike Sass",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_009.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_009_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Enrage"
+        }
+      ]
+    },
+    {
+      "cardId": "CS2_091",
+      "name": "Light's Justice",
+      "cardSet": "Classic",
+      "type": "Weapon",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "durability": 4,
+      "flavor": "Prince Malchezaar was a collector of rare weapons. He'd animate them and have them dance for him.",
+      "artist": "Glenn Rane",
+      "collectible": true,
+      "playerClass": "Paladin",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 36.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_091.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_091_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_082",
+      "name": "Wicked Knife",
+      "cardSet": "Classic",
+      "type": "Weapon",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "attack": 1,
+      "durability": 2,
+      "playerClass": "Rogue",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_082.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_082_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_509e",
+      "name": "Blarghghl",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_355e",
+      "name": "Blessed Champion",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "This minion's Attack has been doubled.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_106",
+      "name": "Fiery War Axe",
+      "cardSet": "Classic",
+      "type": "Weapon",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 2,
+      "attack": 3,
+      "durability": 2,
+      "flavor": "During times of tranquility and harmony, this weapon was called by its less popular name, Chilly Peace Axe.",
+      "artist": "Lucas Graciano",
+      "collectible": true,
+      "playerClass": "Warrior",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 49.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_106.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_106_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_363e2",
+      "name": "Blessing of Wisdom",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "When this minion attacks, the enemy player draws a card.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_059o",
+      "name": "Blood Pact",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Health.",
+      "playerClass": "Warlock",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_411e",
+      "name": "Bloodrage",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "No durability loss.",
+      "playerClass": "Warrior",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_025e",
+      "name": "Bolstered",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Health.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "tt_004o",
+      "name": "Cannibalize",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_073e2",
+      "name": "Cold Blood",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+4 Attack.",
+      "playerClass": "Rogue",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_073e",
+      "name": "Cold Blood",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+2 Attack.",
+      "playerClass": "Rogue",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_036e2",
+      "name": "Commanding Shout",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Your minions can't be reduced below 1 Health this turn.",
+      "playerClass": "Warrior",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "NEW1_036e",
+      "name": "Commanding Shout",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Can't be reduced below 1 Health this turn.",
+      "playerClass": "Warrior",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_304e",
+      "name": "Consume",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased stats.",
+      "playerClass": "Warlock",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_573ae",
+      "name": "Demigod's Favor",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "faction": "Neutral",
+      "text": "+2/+2.",
+      "playerClass": "Druid",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_014e",
+      "name": "Disguised",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Stealthed until your next turn.",
+      "playerClass": "Rogue",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_004e",
+      "name": "Elune's Grace",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Health.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "KARA_08_04e",
+      "name": "Empowered",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+8 Attack this turn.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_055o",
+      "name": "Empowered",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Mana Addict has increased Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "count": 25,
+    "pagination": {
+      "next_cursor": "value_of_the_next_cursor_mock",
+      "limit": 25
+    }
+  }
+}

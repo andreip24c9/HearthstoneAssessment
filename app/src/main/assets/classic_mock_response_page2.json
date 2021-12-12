@@ -1,0 +1,122 @@
+{
+  "data": [
+    {
+      "cardId": "EX1_009e",
+      "name": "Enraged",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+5 Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Enrage"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_414e",
+      "name": "Enraged",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+6 Attack",
+      "playerClass": "Warrior",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_393e",
+      "name": "Enraged",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+3 Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Enrage"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_412e",
+      "name": "Enraged",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+1 Attack and <b>Windfury</b>.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Enrage"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_390e",
+      "name": "Enraged",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+3 Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Enrage"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_619e",
+      "name": "Equality",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Health changed to 1.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_037e",
+      "name": "Equipped",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Increased Attack.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_059e",
+      "name": "Experiments!",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "Attack and Health have been swapped by Crazed Alchemist.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_053e",
+      "name": "Far Sight",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "One of your cards costs (3) less.",
+      "artist": "Lars Grant-West",
+      "playerClass": "Shaman",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_017e",
+      "name": "Full Belly",
+      "cardSet": "Classic",
+      "type": "Enchantment",
+      "text": "+2/+2.  Full of Murloc.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    }
+  ],
+  "meta": {
+    "count" : 10,
+    "pagination": {
+      "next_cursor": null,
+      "limit":25
+    }
+  }
+}

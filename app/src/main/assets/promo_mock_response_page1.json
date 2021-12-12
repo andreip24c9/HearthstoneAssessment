@@ -1,0 +1,10 @@
+{
+  "data": [],
+  "meta": {
+    "count": 0,
+    "pagination": {
+      "next_cursor": null,
+      "limit": 25
+    }
+  }
+}

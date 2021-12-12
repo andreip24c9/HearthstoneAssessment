@@ -1,0 +1,127 @@
+{
+  "data": [
+    {
+      "cardId": "HERO_07",
+      "name": "Gul'dan",
+      "cardSet": "Basic",
+      "type": "Hero",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "health": 30,
+      "collectible": true,
+      "playerClass": "Warlock",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_07.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_07_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_105e",
+      "name": "Heroic Strike",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+4 Attack this turn.",
+      "playerClass": "Warrior",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "OneTurnEffect"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_246e",
+      "name": "Hexxed",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "This minion has been transformed!",
+      "playerClass": "Shaman",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Morph"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_360e",
+      "name": "Humility",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "faction": "Neutral",
+      "text": "Attack has been changed to 1.",
+      "playerClass": "Paladin",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_084e",
+      "name": "Hunter's Mark",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "This minion has 1 Health.",
+      "playerClass": "Hunter",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "HERO_08",
+      "name": "Jaina Proudmoore",
+      "cardSet": "Basic",
+      "type": "Hero",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "health": 30,
+      "collectible": true,
+      "playerClass": "Mage",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_08.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_08_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "GAME_001",
+      "name": "Luck of the Coin",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "Going second grants you increased Health.",
+      "playerClass": "Neutral",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "HERO_06",
+      "name": "Malfurion Stormrage",
+      "cardSet": "Basic",
+      "type": "Hero",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "health": 30,
+      "collectible": true,
+      "playerClass": "Druid",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_06.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_06_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_009e",
+      "name": "Mark of the Wild",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+2/+2 and <b>Taunt</b>.",
+      "playerClass": "Druid",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "DS1_070o",
+      "name": "Master's Presence",
+      "cardSet": "Basic",
+      "type": "Enchantment",
+      "text": "+2/+2 and <b>Taunt</b>.",
+      "playerClass": "Hunter",
+      "locale": "enUS"
+    }
+  ],
+  "meta": {
+    "count": 10,
+    "pagination": {
+      "next_cursor": null,
+      "limit": 25
+    }
+  }
+}

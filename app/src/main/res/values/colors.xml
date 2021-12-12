@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="medium_red">#FF571C18</color>
+    <color name="dark_red">#FF461612</color>
+    <color name="gold_yellow">#FFD0A755</color>
+    <color name="medium_brown">#FF5D442B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
