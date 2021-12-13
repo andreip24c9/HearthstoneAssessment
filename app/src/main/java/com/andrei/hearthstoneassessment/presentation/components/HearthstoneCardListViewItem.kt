@@ -26,10 +26,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.andrei.hearthstoneassessment.R
 import com.andrei.hearthstoneassessment.domain.model.HearthstoneCard
-import com.andrei.hearthstoneassessment.presentation.theme.AttackColor
-import com.andrei.hearthstoneassessment.presentation.theme.DurabilityColor
-import com.andrei.hearthstoneassessment.presentation.theme.HealthColor
-import com.andrei.hearthstoneassessment.presentation.theme.White
+import com.andrei.hearthstoneassessment.presentation.theme.*
 import kotlinx.coroutines.launch
 
 @ExperimentalAnimationApi
@@ -106,21 +103,19 @@ fun HearthstoneCardListViewItem(
                 Text(
                     text = hearthstoneCard.name,
                     modifier = Modifier.fillMaxWidth(),
-                    style = TextStyle(
-                        color = MaterialTheme.colors.onSurface,
-                        fontSize = 20.sp,
-                        fontWeight = FontWeight.SemiBold
-                    )
+                    color = MaterialTheme.colors.onSurface,
+                    style = MaterialTheme.typography.h3
                 )
                 Text(
                     text = hearthstoneCard.cardSet,
                     modifier = Modifier.fillMaxWidth(),
-                    style = TextStyle(color = MaterialTheme.colors.onSurface, fontSize = 16.sp)
+                    color = MaterialTheme.colors.onSurface,
+                    style = MaterialTheme.typography.body1
                 )
                 Row(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(top = 14.dp),
+                        .padding(top = 16.dp),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     hearthstoneCard.attack?.let {
@@ -151,7 +146,8 @@ fun AttachHealthDurabilityChip(color: Color, modifier: Int) {
         Text(
             modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 1.dp),
             text = modifier.toString(),
-            style = TextStyle(color = White, fontSize = 17.sp)
+            color = White,
+            style = MaterialTheme.typography.h4
         )
     }
 }

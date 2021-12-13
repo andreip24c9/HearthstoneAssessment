@@ -38,7 +38,8 @@ fun HSAppTheme(
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
-        colors = if (darkTheme) DarkThemeColors else LightThemeColors
+        colors = if (darkTheme) DarkThemeColors else LightThemeColors,
+        typography = Typography
     ) {
         content()
     }

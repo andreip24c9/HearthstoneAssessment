@@ -52,16 +52,15 @@ class AboutFragment : Fragment() {
                                 text = "ⓘ Hearthstone deck builder assessment application by Andrei Petrescu",
                                 modifier = Modifier.padding(top = 16.dp),
                                 color = MaterialTheme.colors.onBackground,
-                                fontSize = 15.sp,
-                                fontWeight = FontWeight.Light
+                                style = MaterialTheme.typography.body2
                             )
 
                             Text(
                                 text = "The application is build in Kotlin using the following:",
                                 modifier = Modifier.padding(top = 16.dp),
                                 color = MaterialTheme.colors.onBackground,
-                                fontSize = 17.sp,
-                                fontWeight = FontWeight.SemiBold
+                                style = MaterialTheme.typography.h3
+
                             )
                             Text(
                                 text = "• MVVM pattern\n" +
@@ -73,8 +72,7 @@ class AboutFragment : Fragment() {
                                         "• Coil for asynchronous image & gif loading\n",
                                 modifier = Modifier.padding(top = 4.dp),
                                 color = MaterialTheme.colors.onBackground,
-                                fontSize = 17.sp,
-                                fontWeight = FontWeight.Normal
+                                style = MaterialTheme.typography.body1
                             )
                         }
                     }

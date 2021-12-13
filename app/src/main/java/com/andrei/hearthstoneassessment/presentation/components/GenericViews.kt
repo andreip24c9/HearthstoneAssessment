@@ -54,7 +54,7 @@ fun Toolbar(
     HSAppTheme {
         if (onNavigationItemClick != null && navigationIcon != null) {
             TopAppBar(
-                title = { Text(text = title) },
+                title = { Text(text = title, style = MaterialTheme.typography.h3)},
                 backgroundColor = backgroundColor,
                 contentColor = contentColor,
                 navigationIcon = {
@@ -69,7 +69,7 @@ fun Toolbar(
             )
         } else {
             TopAppBar(
-                title = { Text(text = title) },
+                title = { Text(text = title, style = MaterialTheme.typography.h3) },
                 backgroundColor = backgroundColor,
                 contentColor = contentColor,
                 elevation = elevation
@@ -165,8 +165,7 @@ fun LoadingErrorView(
                             textAlign = TextAlign.Center,
                             text = stringResource(id = it),
                             color = MaterialTheme.colors.onBackground,
-                            fontSize = 24.sp,
-                            fontWeight = FontWeight.Medium
+                            style = MaterialTheme.typography.h1
                         )
                     }
                     if (titleRes != null && bodyRes != null) {
@@ -177,7 +176,7 @@ fun LoadingErrorView(
                             modifier = Modifier.padding(start = 32.dp, end = 32.dp),
                             text = stringResource(id = it),
                             color = MaterialTheme.colors.onBackground,
-                            fontSize = 17.sp,
+                            style = MaterialTheme.typography.body1,
                             textAlign = TextAlign.Center
                         )
                     }
@@ -202,8 +201,7 @@ fun LoadingErrorView(
                                     modifier = Modifier.padding(end = if (icon != null) 8.dp else 0.dp),
                                     text = stringResource(id = it),
                                     color = MaterialTheme.colors.onSurface,
-                                    fontSize = 17.sp,
-                                    fontWeight = FontWeight.Medium
+                                    style = MaterialTheme.typography.button
                                 )
                             }
                         }

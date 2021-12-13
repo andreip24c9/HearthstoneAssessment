@@ -5,6 +5,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -84,8 +85,7 @@ fun PageDetailView(
                         modifier = Modifier
                             .fillMaxWidth(),
                         color = White,
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold
+                        style = MaterialTheme.typography.h2
                     )
 
                     card.flavor?.let {
@@ -95,9 +95,8 @@ fun PageDetailView(
                                 .fillMaxWidth()
                                 .padding(top = 4.dp),
                             color = WhiteTranslucent,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Light,
-                            fontStyle = FontStyle.Italic
+                            style = MaterialTheme.typography.body2,
+                            fontWeight = FontWeight.Light
                         )
                     }
 
@@ -108,8 +107,7 @@ fun PageDetailView(
                                 .fillMaxWidth()
                                 .padding(top = 4.dp),
                             color = White,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Light
+                            style = MaterialTheme.typography.body2,
                         )
                     }
 
@@ -155,15 +153,13 @@ fun BulletPointList(
                 Text(
                     text = "• ${stringResource(id = listItem.typeRes)}:",
                     color = HSPaleYellow2,
-                    fontSize = 14.sp,
-                    fontWeight = FontWeight.Bold
+                    style = MaterialTheme.typography.subtitle1
                 )
                 Text(
                     text = listItem.value,
                     modifier = Modifier.padding(start = 4.dp),
                     color = White,
-                    fontSize = 14.sp,
-                    fontWeight = FontWeight.Light
+                    style = MaterialTheme.typography.subtitle2
                 )
             }
         }
