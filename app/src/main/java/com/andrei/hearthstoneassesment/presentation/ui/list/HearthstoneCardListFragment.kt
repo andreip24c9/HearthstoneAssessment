@@ -2,13 +2,11 @@ package com.andrei.hearthstoneassesment.presentation.ui.list
 
 import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.*
@@ -22,8 +20,9 @@ import androidx.navigation.fragment.findNavController
 import com.andrei.hearthstoneassesment.R
 import com.andrei.hearthstoneassesment.domain.model.HearthstoneCardList
 import com.andrei.hearthstoneassesment.presentation.components.*
+import com.andrei.hearthstoneassesment.presentation.theme.HSAppTheme
+import com.andrei.hearthstoneassesment.presentation.theme.HSDarkRed
 import com.andrei.hearthstoneassesment.presentation.ui.list.HearthstoneCardListViewModel.Companion.PAGE_SIZE
-import com.andrei.hearthstoneassesment.presentation.ui.theme.*
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.SwipeRefreshIndicator
 import com.google.accompanist.swiperefresh.SwipeRefreshState
@@ -47,7 +46,7 @@ class HearthstoneCardListFragment : Fragment() {
                 val scaffoldState = rememberScaffoldState()
                 val systemUiController = rememberSystemUiController()
                 SideEffect { systemUiController.setSystemBarsColor(color = HSDarkRed) }
-                MaterialTheme {
+                HSAppTheme {
                     val cards = viewModel.cards.value
                     val selectedCategory = viewModel.selectedCategory.value
                     val pageLoading = viewModel.pageLoader.value
@@ -70,7 +69,6 @@ class HearthstoneCardListFragment : Fragment() {
                         Column {
                             HorizontalList(
                                 listItems = getAllCardCategories(),
-                                modifier = Modifier.background(color = HSPaleYellow),
                                 items = { index, item ->
                                     CardSetChip(
                                         text = item.value,
@@ -78,7 +76,7 @@ class HearthstoneCardListFragment : Fragment() {
                                     ) { viewModel.onCategorySelected(item) }
                                 })
 
-                            Box(modifier = Modifier.background(color = HSPaleYellow)) {
+                            Box() {
                                 SwipeRefresh(
                                     state = SwipeRefreshState(isRefreshing = pageLoading && cards.isNotEmpty()),
                                     onRefresh = { viewModel.refresh() },
@@ -87,7 +85,8 @@ class HearthstoneCardListFragment : Fragment() {
                                             state = state,
                                             refreshTriggerDistance = trigger,
                                             scale = true,
-                                            backgroundColor = HSGoldYellow2
+                                            backgroundColor = MaterialTheme.colors.secondaryVariant,
+                                            contentColor = MaterialTheme.colors.onSecondary
                                         )
                                     }) {
 
@@ -109,8 +108,7 @@ class HearthstoneCardListFragment : Fragment() {
                                             listItems = cards,
                                             withLoader = listLoading,
                                             modifier = Modifier
-                                                .fillMaxHeight()
-                                                .background(color = HSPaleYellow),
+                                                .fillMaxHeight(),
                                             items = { index, item ->
                                                 viewModel.onChangeListScrollPosition(index)
                                                 if ((index + 1) >= (page * PAGE_SIZE) && !(pageLoading || listLoading)) {
@@ -141,8 +139,7 @@ class HearthstoneCardListFragment : Fragment() {
                                             listItems = cards,
                                             withLoader = listLoading,
                                             modifier = Modifier
-                                                .fillMaxHeight()
-                                                .background(color = HSPaleYellow),
+                                                .fillMaxHeight(),
                                             items = { index, item ->
                                                 viewModel.onChangeListScrollPosition(index)
                                                 if ((index + 1) >= (page * PAGE_SIZE) && !(pageLoading || listLoading)) {
@@ -165,7 +162,7 @@ class HearthstoneCardListFragment : Fragment() {
                                                             bundle
                                                         )
                                                     })
-                                                Divider(color = HSGoldYellow)
+                                                Divider(color = MaterialTheme.colors.secondaryVariant)
                                             }
                                         )
                                     }

@@ -4,12 +4,12 @@ import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.*
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -18,8 +18,6 @@ import androidx.compose.ui.unit.dp
 import coil.compose.rememberImagePainter
 import com.andrei.hearthstoneassesment.R
 import com.andrei.hearthstoneassesment.domain.model.HearthstoneCard
-import com.andrei.hearthstoneassesment.presentation.ui.theme.HSMediumRed
-import com.andrei.hearthstoneassesment.presentation.ui.theme.HSPaleYellow
 
 @Composable
 fun HearthstoneCardGridViewItem(
@@ -28,7 +26,7 @@ fun HearthstoneCardGridViewItem(
 ) {
     Box(
         modifier = Modifier
-            .background(color = HSPaleYellow)
+            .background(color = MaterialTheme.colors.surface)
             .selectable(selected = true, onClick = onClick)
             .height(240.dp)
             .fillMaxWidth()
@@ -94,7 +92,7 @@ fun <ItemType> ScrollToTopGridView(
                 CircularProgressIndicator(
                     modifier = Modifier
                         .align(Alignment.Center)
-                        .padding(all = 24.dp), color = HSMediumRed
+                        .padding(all = 24.dp), color = MaterialTheme.colors.onSurface
                 )
             }
         }

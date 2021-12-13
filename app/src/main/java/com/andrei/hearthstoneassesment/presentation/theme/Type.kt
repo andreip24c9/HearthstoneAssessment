@@ -1,4 +1,4 @@
-package com.andrei.hearthstoneassesment.presentation.ui.theme
+package com.andrei.hearthstoneassesment.presentation.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

@@ -23,10 +23,10 @@ import coil.decode.ImageDecoderDecoder
 import com.andrei.hearthstoneassesment.R
 import com.andrei.hearthstoneassesment.domain.model.HearthstoneCard
 import com.andrei.hearthstoneassesment.domain.util.sdk28AndUp
-import com.andrei.hearthstoneassesment.presentation.ui.theme.Black
-import com.andrei.hearthstoneassesment.presentation.ui.theme.HSPaleYellow2
-import com.andrei.hearthstoneassesment.presentation.ui.theme.White
-import com.andrei.hearthstoneassesment.presentation.ui.theme.WhiteTranslucent
+import com.andrei.hearthstoneassesment.presentation.theme.Black
+import com.andrei.hearthstoneassesment.presentation.theme.HSPaleYellow2
+import com.andrei.hearthstoneassesment.presentation.theme.White
+import com.andrei.hearthstoneassesment.presentation.theme.WhiteTranslucent
 
 
 @Composable

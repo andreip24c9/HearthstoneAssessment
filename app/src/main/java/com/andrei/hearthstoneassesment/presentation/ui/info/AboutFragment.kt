@@ -17,14 +17,12 @@ import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.andrei.hearthstoneassesment.presentation.components.Toolbar
-import com.andrei.hearthstoneassesment.presentation.ui.theme.HSMediumBrown
-import com.andrei.hearthstoneassesment.presentation.ui.theme.HSPaleYellow
+import com.andrei.hearthstoneassesment.presentation.theme.HSAppTheme
 
 class AboutFragment : Fragment() {
 
@@ -35,7 +33,7 @@ class AboutFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                MaterialTheme {
+                HSAppTheme {
                     Scaffold(
                         topBar = {
                             Toolbar(
@@ -49,13 +47,12 @@ class AboutFragment : Fragment() {
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .fillMaxHeight()
-                                .background(color = HSPaleYellow)
                                 .padding(start = 16.dp, end = 16.dp)
                         ) {
                             Text(
                                 text = "ⓘ Hearthstone deck builder assessment application by Andrei Petrescu",
                                 modifier = Modifier.padding(top = 16.dp),
-                                color = HSMediumBrown,
+                                color = MaterialTheme.colors.onBackground,
                                 fontSize = 15.sp,
                                 fontWeight = FontWeight.Light
                             )
@@ -63,7 +60,7 @@ class AboutFragment : Fragment() {
                             Text(
                                 text = "The application is build in Kotlin using the following:",
                                 modifier = Modifier.padding(top = 16.dp),
-                                color = HSMediumBrown,
+                                color = MaterialTheme.colors.onBackground,
                                 fontSize = 17.sp,
                                 fontWeight = FontWeight.SemiBold
                             )
@@ -76,7 +73,7 @@ class AboutFragment : Fragment() {
                                         "• Retrofit with Okhttp3 for networking\n" +
                                         "• Coil for asynchronous image & gif loading\n",
                                 modifier = Modifier.padding(top = 4.dp),
-                                color = HSMediumBrown,
+                                color = MaterialTheme.colors.onBackground,
                                 fontSize = 17.sp,
                                 fontWeight = FontWeight.Normal
                             )

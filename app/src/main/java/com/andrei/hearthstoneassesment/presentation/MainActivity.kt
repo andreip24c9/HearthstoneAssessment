@@ -3,11 +3,15 @@ package com.andrei.hearthstoneassesment.presentation
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.content.res.AppCompatResources
+import androidx.compose.ui.res.painterResource
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.FragmentNavigator
 import coil.ImageLoader
 import coil.decode.GifDecoder
 import coil.decode.ImageDecoderDecoder
+import com.andrei.hearthstoneassesment.R
 import com.andrei.hearthstoneassesment.databinding.MainActivityBinding
 import com.andrei.hearthstoneassesment.domain.util.sdk28AndUp
 import com.andrei.hearthstoneassesment.presentation.ui.list.HearthstoneCardListFragment

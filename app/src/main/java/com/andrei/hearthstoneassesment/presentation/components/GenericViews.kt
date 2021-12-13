@@ -26,18 +26,18 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.andrei.hearthstoneassesment.R
-import com.andrei.hearthstoneassesment.presentation.ui.theme.*
+import com.andrei.hearthstoneassesment.presentation.theme.HSAppTheme
 
 @Composable
 fun ScrollToTopButton(onClick: () -> Unit) {
     FloatingActionButton(
         onClick = onClick,
-        backgroundColor = HSGoldYellow,
+        backgroundColor = MaterialTheme.colors.secondary,
         modifier = Modifier
             .padding(16.dp)
-            .border(2.dp, color = HSDarkBrown, shape = CircleShape)
+            .border(2.dp, color = MaterialTheme.colors.onSecondary, shape = CircleShape)
     ) {
-        Icon(Icons.Filled.KeyboardArrowUp, null, tint = HSDarkBrown)
+        Icon(Icons.Filled.KeyboardArrowUp, null, tint = MaterialTheme.colors.onSecondary)
     }
 }
 
@@ -47,32 +47,34 @@ fun Toolbar(
     title: String = "",
     onNavigationItemClick: (() -> Unit)? = null,
     navigationIcon: ImageVector? = null,
-    contentColor: Color = HSGoldYellow2,
-    backgroundColor: Color = HSMediumRed,
+    contentColor: Color = MaterialTheme.colors.onPrimary,
+    backgroundColor: Color = MaterialTheme.colors.primary,
     elevation: Dp = 4.dp
 ) {
-    if (onNavigationItemClick != null && navigationIcon != null) {
-        TopAppBar(
-            title = { Text(text = title) },
-            backgroundColor = backgroundColor,
-            contentColor = contentColor,
-            navigationIcon = {
-                IconButton(onClick = onNavigationItemClick) {
-                    Icon(
-                        navigationIcon,
-                        contentDescription = null
-                    )
-                }
-            },
-            elevation = elevation
-        )
-    } else {
-        TopAppBar(
-            title = { Text(text = title) },
-            backgroundColor = HSMediumRed,
-            contentColor = HSGoldYellow2,
-            elevation = elevation
-        )
+    HSAppTheme {
+        if (onNavigationItemClick != null && navigationIcon != null) {
+            TopAppBar(
+                title = { Text(text = title) },
+                backgroundColor = backgroundColor,
+                contentColor = contentColor,
+                navigationIcon = {
+                    IconButton(onClick = onNavigationItemClick) {
+                        Icon(
+                            navigationIcon,
+                            contentDescription = null
+                        )
+                    }
+                },
+                elevation = elevation
+            )
+        } else {
+            TopAppBar(
+                title = { Text(text = title) },
+                backgroundColor = backgroundColor,
+                contentColor = contentColor,
+                elevation = elevation
+            )
+        }
     }
 }
 
@@ -82,52 +84,56 @@ fun ImageToolbar(
     secondMenuIconRes: Int,
     onInfoClicked: () -> Unit,
     onSecondMenuItemClicked: () -> Unit,
+    contentColor: Color = MaterialTheme.colors.onPrimary,
+    backgroundColor: Color = MaterialTheme.colors.primary,
     elevation: Dp = 4.dp
 ) {
-    Surface(
-        elevation = elevation,
-        color = HSMediumRed,
-        modifier = Modifier
-            .fillMaxWidth()
-            .height(56.dp)
-    ) {
-
-        Row(
+    HSAppTheme {
+        Surface(
+            elevation = elevation,
+            color = backgroundColor,
             modifier = Modifier
-                .width(30.dp)
-                .height(10.dp)
-                .background(color = HSMediumRed)
-                .padding(16.dp),
-            horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
+                .fillMaxWidth()
+                .height(56.dp)
         ) {
 
-            Image(
-                painter = painterResource(id = R.drawable.ic_info),
-                contentDescription = null,
-                colorFilter = ColorFilter.tint(color = HSGoldYellow2),
+            Row(
                 modifier = Modifier
-                    .height(24.dp)
-                    .width(24.dp)
-                    .selectable(selected = false, onClick = onInfoClicked)
-            )
+                    .width(30.dp)
+                    .height(10.dp)
+                    .background(color = backgroundColor)
+                    .padding(16.dp),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
 
-            Image(
-                painter = painterResource(id = imageRes),
-                modifier = Modifier.wrapContentWidth(),
-                contentDescription = null,
-                colorFilter = ColorFilter.tint(color = HSGoldYellow2)
-            )
+                Image(
+                    painter = painterResource(id = R.drawable.ic_info),
+                    contentDescription = null,
+                    colorFilter = ColorFilter.tint(color = contentColor),
+                    modifier = Modifier
+                        .height(24.dp)
+                        .width(24.dp)
+                        .selectable(selected = false, onClick = onInfoClicked)
+                )
 
-            Image(
-                painter = painterResource(id = secondMenuIconRes),
-                contentDescription = null,
-                colorFilter = ColorFilter.tint(color = HSGoldYellow2),
-                modifier = Modifier
-                    .height(24.dp)
-                    .width(24.dp)
-                    .selectable(selected = false, onClick = onSecondMenuItemClicked)
-            )
+                Image(
+                    painter = painterResource(id = imageRes),
+                    modifier = Modifier.wrapContentWidth(),
+                    contentDescription = null,
+                    colorFilter = ColorFilter.tint(color = contentColor)
+                )
+
+                Image(
+                    painter = painterResource(id = secondMenuIconRes),
+                    contentDescription = null,
+                    colorFilter = ColorFilter.tint(color = contentColor),
+                    modifier = Modifier
+                        .height(24.dp)
+                        .width(24.dp)
+                        .selectable(selected = false, onClick = onSecondMenuItemClicked)
+                )
+            }
         }
     }
 }
@@ -149,7 +155,7 @@ fun LoadingErrorView(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             if (isLoading) {
-                CircularProgressIndicator(color = HSMediumRed)
+                CircularProgressIndicator(color = MaterialTheme.colors.onBackground)
             } else {
                 error?.apply {
                     titleRes?.let {
@@ -158,7 +164,7 @@ fun LoadingErrorView(
                                 .padding(start = 32.dp, end = 32.dp),
                             textAlign = TextAlign.Center,
                             text = stringResource(id = it),
-                            color = HSDarkBrown,
+                            color = MaterialTheme.colors.onBackground,
                             fontSize = 24.sp,
                             fontWeight = FontWeight.Medium
                         )
@@ -170,7 +176,7 @@ fun LoadingErrorView(
                         Text(
                             modifier = Modifier.padding(start = 32.dp, end = 32.dp),
                             text = stringResource(id = it),
-                            color = HSMediumBrown,
+                            color = MaterialTheme.colors.onBackground,
                             fontSize = 17.sp,
                             textAlign = TextAlign.Center
                         )
@@ -179,23 +185,23 @@ fun LoadingErrorView(
                         Spacer(modifier = Modifier.padding(top = 48.dp))
                         Button(
                             onClick = onClick,
-                            border = BorderStroke(1.dp, color = HSDarkBrown),
+                            border = BorderStroke(1.dp, color = MaterialTheme.colors.onSurface),
                             shape = RoundedCornerShape(12.dp),
-                            colors = ButtonDefaults.buttonColors(backgroundColor = HSGoldYellow2)
+                            colors = ButtonDefaults.buttonColors(backgroundColor = MaterialTheme.colors.secondaryVariant)
                         ) {
                             icon?.let {
                                 Icon(
                                     painter = painterResource(id = it),
                                     contentDescription = null,
                                     modifier = Modifier.padding(end = 16.dp),
-                                    tint = HSDarkBrown
+                                    tint = MaterialTheme.colors.onSurface
                                 )
                             }
                             textRes?.let {
                                 Text(
                                     modifier = Modifier.padding(end = if (icon != null) 8.dp else 0.dp),
                                     text = stringResource(id = it),
-                                    color = HSDarkBrown,
+                                    color = MaterialTheme.colors.onSurface,
                                     fontSize = 17.sp,
                                     fontWeight = FontWeight.Medium
                                 )

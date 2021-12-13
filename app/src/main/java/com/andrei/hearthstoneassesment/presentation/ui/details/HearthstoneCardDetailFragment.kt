@@ -26,11 +26,12 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.andrei.hearthstoneassesment.domain.model.HearthstoneCardList
 import com.andrei.hearthstoneassesment.presentation.components.*
-import com.andrei.hearthstoneassesment.presentation.ui.theme.*
 import com.google.accompanist.pager.ExperimentalPagerApi
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.PagerState
 import com.andrei.hearthstoneassesment.R
+import com.andrei.hearthstoneassesment.presentation.theme.Black
+import com.andrei.hearthstoneassesment.presentation.theme.HSAppTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.InternalCoroutinesApi
@@ -61,7 +62,7 @@ class HearthstoneCardDetailFragment : Fragment() {
                 val systemUiController = rememberSystemUiController()
 
                 SideEffect { systemUiController.setSystemBarsColor(color = Black) }
-                MaterialTheme {
+                HSAppTheme {
                     Scaffold {
                         Box(
                             Modifier
@@ -107,7 +108,7 @@ class HearthstoneCardDetailFragment : Fragment() {
                                 if (!firstPage) {
                                     Image(
                                         painter = painterResource(id = R.drawable.ic_arrow_left),
-                                        colorFilter = ColorFilter.tint(color = HSGoldYellow2),
+                                        colorFilter = ColorFilter.tint(color = MaterialTheme.colors.secondaryVariant),
                                         modifier = Modifier
                                             .width(48.dp)
                                             .height(48.dp)
@@ -131,7 +132,7 @@ class HearthstoneCardDetailFragment : Fragment() {
                                                 }
                                             }),
                                         contentDescription = null,
-                                        colorFilter = ColorFilter.tint(color = HSGoldYellow2)
+                                        colorFilter = ColorFilter.tint(color = MaterialTheme.colors.secondaryVariant)
                                     )
                                 }
                             }

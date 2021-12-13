@@ -2,8 +2,6 @@ package com.andrei.hearthstoneassesment.presentation.components
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.ExperimentalAnimationApi
-import androidx.compose.animation.fadeIn
-import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -15,12 +13,12 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.CircularProgressIndicator
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -28,7 +26,10 @@ import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.andrei.hearthstoneassesment.R
 import com.andrei.hearthstoneassesment.domain.model.HearthstoneCard
-import com.andrei.hearthstoneassesment.presentation.ui.theme.*
+import com.andrei.hearthstoneassesment.presentation.theme.AttackColor
+import com.andrei.hearthstoneassesment.presentation.theme.DurabilityColor
+import com.andrei.hearthstoneassesment.presentation.theme.HealthColor
+import com.andrei.hearthstoneassesment.presentation.theme.White
 import kotlinx.coroutines.launch
 
 @ExperimentalAnimationApi
@@ -57,7 +58,7 @@ fun <ItemType> VerticalScrollToTopList(
                         CircularProgressIndicator(
                             modifier = Modifier
                                 .align(Alignment.Center)
-                                .padding(top = 24.dp), color = HSMediumRed
+                                .padding(top = 24.dp), color = MaterialTheme.colors.onBackground
                         )
                     }
                 }
@@ -84,7 +85,6 @@ fun HearthstoneCardListViewItem(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(color = HSPaleYellow)
                 .padding(start = 16.dp, end = 16.dp, bottom = 12.dp)
         ) {
             Image(
@@ -107,7 +107,7 @@ fun HearthstoneCardListViewItem(
                     text = hearthstoneCard.name,
                     modifier = Modifier.fillMaxWidth(),
                     style = TextStyle(
-                        color = HSMediumBrown,
+                        color = MaterialTheme.colors.onSurface,
                         fontSize = 20.sp,
                         fontWeight = FontWeight.SemiBold
                     )
@@ -115,7 +115,7 @@ fun HearthstoneCardListViewItem(
                 Text(
                     text = hearthstoneCard.cardSet,
                     modifier = Modifier.fillMaxWidth(),
-                    style = TextStyle(color = HSMediumBrown, fontSize = 16.sp)
+                    style = TextStyle(color = MaterialTheme.colors.onSurface, fontSize = 16.sp)
                 )
                 Row(
                     modifier = Modifier
@@ -146,7 +146,7 @@ fun AttachHealthDurabilityChip(color: Color, modifier: Int) {
                 color = color,
                 shape = RoundedCornerShape(24.dp)
             )
-            .border(1.dp, color = HSMediumBrown, shape = RoundedCornerShape(24.dp))
+            .border(1.dp, color = MaterialTheme.colors.onSurface, shape = RoundedCornerShape(24.dp))
     ) {
         Text(
             modifier = Modifier.padding(start = 16.dp, end = 16.dp, bottom = 1.dp),

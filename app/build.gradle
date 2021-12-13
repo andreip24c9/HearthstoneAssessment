@@ -156,7 +156,7 @@ dependencies {
 
     // to change status bar color
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta"
-
+    
     // dependency added to fix this issue:
     // Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE
     // be specified when creating a PendingIntent.
