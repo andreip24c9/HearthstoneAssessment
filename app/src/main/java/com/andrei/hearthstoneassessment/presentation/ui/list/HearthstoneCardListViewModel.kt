@@ -25,7 +25,7 @@ constructor(
 ) : ViewModel() {
 
     val cards: MutableState<List<HearthstoneCard>> = mutableStateOf(ArrayList())
-    val selectedCategory: MutableState<CardSetCategory> = mutableStateOf(CardSetCategory.BASIC)
+    val selectedCategory: MutableState<CardSetCategory> = mutableStateOf(CardSetCategory.CLASSIC)
     var pageLoader = mutableStateOf(false)
     var listLoader = mutableStateOf(false)
     var page = mutableStateOf(1)

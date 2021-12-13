@@ -15,51 +15,106 @@
       "locale": "enUS"
     },
     {
-      "cardId": "CS2_105e",
-      "name": "Heroic Strike",
+      "cardId": "EX1_277",
+      "name": "Arcane Missiles",
       "cardSet": "Basic",
-      "type": "Enchantment",
-      "text": "+4 Attack this turn.",
-      "playerClass": "Warrior",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "OneTurnEffect"
-        }
-      ]
-    },
-    {
-      "cardId": "EX1_246e",
-      "name": "Hexxed",
-      "cardSet": "Basic",
-      "type": "Enchantment",
-      "text": "This minion has been transformed!",
-      "playerClass": "Shaman",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "Morph"
-        }
-      ]
-    },
-    {
-      "cardId": "EX1_360e",
-      "name": "Humility",
-      "cardSet": "Basic",
-      "type": "Enchantment",
+      "type": "Spell",
       "faction": "Neutral",
-      "text": "Attack has been changed to 1.",
-      "playerClass": "Paladin",
+      "rarity": "Free",
+      "cost": 1,
+      "text": "Deal $3 damage randomly split among all enemies.",
+      "flavor": "You'd think you'd be able to control your missiles a little better since you're a powerful mage and all.",
+      "artist": "Warren Mahy",
+      "collectible": true,
+      "playerClass": "Mage",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 32.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_277.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_277_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "ImmuneToSpellpower"
+        }
+      ]
+    },
+    {
+      "cardId": "DS1_185",
+      "name": "Arcane Shot",
+      "cardSet": "Basic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "text": "Deal $2 damage.",
+      "flavor": "Magi conjured arcane arrows to sell to hunters, until hunters learned just enough magic to do it themselves.  The resulting loss of jobs sent Stormwind into a minor recession.",
+      "artist": "Luca Zontini",
+      "collectible": true,
+      "playerClass": "Hunter",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 32.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/DS1_185.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/DS1_185_premium.gif",
       "locale": "enUS"
     },
     {
-      "cardId": "CS2_084e",
-      "name": "Hunter's Mark",
+      "cardId": "CS2_087",
+      "name": "Blessing of Might",
       "cardSet": "Basic",
-      "type": "Enchantment",
-      "text": "This minion has 1 Health.",
-      "playerClass": "Hunter",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "text": "Give a minion +3_Attack.",
+      "flavor": "\"As in, you MIGHT want to get out of my way.\" - Toad Mackle, recently buffed.",
+      "artist": "Zoltan Boros",
+      "collectible": true,
+      "playerClass": "Paladin",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 45.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_087.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_087_premium.gif",
       "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_boar",
+      "name": "Boar",
+      "cardSet": "Basic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/CS2_boar.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/CS2_boar_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS2_103",
+      "name": "Charge",
+      "cardSet": "Basic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Free",
+      "cost": 1,
+      "text": "Give a friendly minion <b>Charge</b>. It can't attack heroes this turn.",
+      "flavor": "\"Guys! Guys! Slow down!\" - some kind of non-warrior minion",
+      "artist": "Alex Horley Orlandelli",
+      "collectible": true,
+      "playerClass": "Warrior",
+      "howToGet": "Unlocked at Level 1.",
+      "howToGetGold": "Unlocked at Level 23.",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS2_103.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS2_103_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        }
+      ]
     },
     {
       "cardId": "HERO_08",
@@ -73,15 +128,6 @@
       "playerClass": "Mage",
       "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/HERO_08.png",
       "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/HERO_08_premium.gif",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "GAME_001",
-      "name": "Luck of the Coin",
-      "cardSet": "Basic",
-      "type": "Enchantment",
-      "text": "Going second grants you increased Health.",
-      "playerClass": "Neutral",
       "locale": "enUS"
     },
     {

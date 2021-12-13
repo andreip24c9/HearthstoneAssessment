@@ -175,151 +175,279 @@
       "locale": "enUS"
     },
     {
-      "cardId": "CS2_059o",
-      "name": "Blood Pact",
+      "cardId": "EX1_245",
+      "name": "Earth Shock",
       "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Increased Health.",
-      "playerClass": "Warlock",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "EX1_411e",
-      "name": "Bloodrage",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "No durability loss.",
-      "playerClass": "Warrior",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "NEW1_025e",
-      "name": "Bolstered",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Increased Health.",
-      "playerClass": "Neutral",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "tt_004o",
-      "name": "Cannibalize",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Increased Attack.",
-      "playerClass": "Neutral",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "CS2_073e2",
-      "name": "Cold Blood",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "+4 Attack.",
-      "playerClass": "Rogue",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "CS2_073e",
-      "name": "Cold Blood",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "+2 Attack.",
-      "playerClass": "Rogue",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "NEW1_036e2",
-      "name": "Commanding Shout",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Your minions can't be reduced below 1 Health this turn.",
-      "playerClass": "Warrior",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "OneTurnEffect"
-        }
-      ]
-    },
-    {
-      "cardId": "NEW1_036e",
-      "name": "Commanding Shout",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Can't be reduced below 1 Health this turn.",
-      "playerClass": "Warrior",
-      "locale": "enUS",
-      "mechanics": [
-        {
-          "name": "OneTurnEffect"
-        }
-      ]
-    },
-    {
-      "cardId": "EX1_304e",
-      "name": "Consume",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Increased stats.",
-      "playerClass": "Warlock",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "EX1_573ae",
-      "name": "Demigod's Favor",
-      "cardSet": "Classic",
-      "type": "Enchantment",
+      "type": "Spell",
       "faction": "Neutral",
-      "text": "+2/+2.",
-      "playerClass": "Druid",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "NEW1_014e",
-      "name": "Disguised",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Stealthed until your next turn.",
-      "playerClass": "Rogue",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "EX1_004e",
-      "name": "Elune's Grace",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Increased Health.",
-      "playerClass": "Neutral",
-      "locale": "enUS"
-    },
-    {
-      "cardId": "KARA_08_04e",
-      "name": "Empowered",
-      "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "+8 Attack this turn.",
-      "playerClass": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "text": "<b>Silence</b> a minion, then deal $1 damage to it.",
+      "flavor": "Earth Shock? Shouldn't it be \"Azeroth Shock\"?",
+      "artist": "Kevin Chin",
+      "collectible": true,
+      "playerClass": "Shaman",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_245.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_245_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
-          "name": "OneTurnEffect"
+          "name": "Silence"
         }
       ]
     },
     {
-      "cardId": "EX1_055o",
-      "name": "Empowered",
+      "cardId": "EX1_132",
+      "name": "Eye for an Eye",
       "cardSet": "Classic",
-      "type": "Enchantment",
-      "text": "Mana Addict has increased Attack.",
-      "playerClass": "Neutral",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "text": "<b>Secret:</b> When your hero takes damage, deal_that much damage to the enemy hero.",
+      "flavor": "Justice sometimes takes the form of a closed fist into a soft cheek.",
+      "artist": "James Ryman",
+      "collectible": true,
+      "playerClass": "Paladin",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_132.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_132_premium.gif",
       "locale": "enUS",
       "mechanics": [
         {
-          "name": "OneTurnEffect"
+          "name": "Secret"
         }
       ]
+    },
+    {
+      "cardId": "EX1_319",
+      "name": "Flame Imp",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 3,
+      "health": 2,
+      "text": "<b>Battlecry:</b> Deal 3 damage to your hero.",
+      "flavor": "Imps like being on fire.  They just do.",
+      "artist": "Alex Horley Orlandelli",
+      "collectible": true,
+      "race": "Demon",
+      "playerClass": "Warlock",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_319.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_319_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_614t",
+      "name": "Flame of Azzinoth",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "cost": 1,
+      "attack": 2,
+      "health": 1,
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_614t.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_614t_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_251",
+      "name": "Forked Lightning",
+      "cardSet": "Classic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "text": "Deal $2 damage to 2_random enemy minions. <b>Overload:</b> (2)",
+      "flavor": "If you combine it with Spooned Lightning and Knived Lightning, you have the full dining set.",
+      "artist": "Ralph Horsley",
+      "collectible": true,
+      "playerClass": "Shaman",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_251.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_251_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Overload"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_409t",
+      "name": "Heavy Axe",
+      "cardSet": "Classic",
+      "type": "Weapon",
+      "cost": 1,
+      "attack": 1,
+      "durability": 3,
+      "playerClass": "Warrior",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_409t.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_409t_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_538t",
+      "name": "Hound",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "<b>Charge</b>",
+      "race": "Beast",
+      "playerClass": "Hunter",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_538t.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_538t_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Charge"
+        }
+      ]
+    },
+    {
+      "cardId": "NEW1_017",
+      "name": "Hungry Crab",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "rarity": "Epic",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "text": "<b>Battlecry:</b> Destroy a Murloc and gain +2/+2.",
+      "flavor": "Murloc.  It's what's for dinner.",
+      "artist": "Jaemin Kim",
+      "collectible": true,
+      "race": "Beast",
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/NEW1_017.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/NEW1_017_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Battlecry"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_598",
+      "name": "Imp",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "race": "Demon",
+      "playerClass": "Neutral",
+      "img": "http://wow.zamimg.com/images/hearthstone/cards/enus/original/EX1_598.png",
+      "imgGold": "http://wow.zamimg.com/images/hearthstone/cards/enus/animated/EX1_598_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "CS1_129",
+      "name": "Inner Fire",
+      "cardSet": "Classic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "text": "Change a minion's Attack to be equal to its Health.",
+      "flavor": "Good idea: Buffing your minions.  Bad idea: Starting a conversation in the Barrens.",
+      "artist": "Steve Prescott",
+      "collectible": true,
+      "playerClass": "Priest",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/CS1_129.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/CS1_129_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "EX1_029",
+      "name": "Leper Gnome",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "text": "<b>Deathrattle:</b> Deal 2 damage to the enemy_hero.",
+      "flavor": "He really just wants to be your friend, but the constant rejection is starting to really get to him.",
+      "artist": "Glenn Rane",
+      "collectible": true,
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_029.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_029_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Deathrattle"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_238",
+      "name": "Lightning Bolt",
+      "cardSet": "Classic",
+      "type": "Spell",
+      "faction": "Neutral",
+      "rarity": "Common",
+      "cost": 1,
+      "text": "Deal $3 damage. <b>Overload:</b> (1)",
+      "flavor": "Lightning Bolt! Lightning Bolt! Lightning Bolt!",
+      "artist": "Daarken",
+      "collectible": true,
+      "playerClass": "Shaman",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_238.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_238_premium.gif",
+      "locale": "enUS",
+      "mechanics": [
+        {
+          "name": "Overload"
+        }
+      ]
+    },
+    {
+      "cardId": "EX1_001",
+      "name": "Lightwarden",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "rarity": "Rare",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "text": "Whenever a character is healed, gain +2 Attack.",
+      "flavor": "She\u2019s smaller than her sisters Mediumwarden and Heavywarden.",
+      "artist": "Erik Ko",
+      "collectible": true,
+      "playerClass": "Neutral",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/EX1_001.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/EX1_001_premium.gif",
+      "locale": "enUS"
+    },
+    {
+      "cardId": "NEW1_012",
+      "name": "Mana Wyrm",
+      "cardSet": "Classic",
+      "type": "Minion",
+      "rarity": "Common",
+      "cost": 1,
+      "attack": 1,
+      "health": 3,
+      "text": "Whenever you cast a spell, gain +1 Attack.",
+      "flavor": "These wyrms feed on arcane energies, and while they are generally considered a nuisance rather than a real threat, you really shouldn't leave them alone with a bucket of mana.",
+      "artist": "Blizzard Cinematics",
+      "collectible": true,
+      "playerClass": "Mage",
+      "img": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/NEW1_012.png",
+      "imgGold": "http://media.services.zam.com/v1/media/byName/hs/cards/enus/animated/NEW1_012_premium.gif",
+      "locale": "enUS"
     }
   ],
   "meta": {

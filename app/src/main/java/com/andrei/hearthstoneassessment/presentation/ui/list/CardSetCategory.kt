@@ -1,8 +1,8 @@
 package com.andrei.hearthstoneassessment.presentation.ui.list
 
 enum class CardSetCategory(val value: String) {
-    BASIC("Basic"),
     CLASSIC("Classic"),
+    BASIC("Basic"),
     PROMO("Promo"),
     HALL_OF_FAME("Hall of fame"),
     NAXXRAMAS("Naxxramas")
