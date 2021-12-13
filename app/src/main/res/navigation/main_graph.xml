@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/hearthstoneCardListFragment"
-        android:name="com.andrei.hearthstoneassesment.presentation.ui.list.HearthstoneCardListFragment"
+        android:name="com.andrei.hearthstoneassessment.presentation.ui.list.HearthstoneCardListFragment"
         android:label="HearthstoneCardListFragment">
         <action
             android:id="@+id/action_view_detail"
@@ -16,7 +16,7 @@
             app:popExitAnim="@anim/fade_out_pop_exit">
             <argument
                 android:name="cards"
-                app:argType="com.andrei.hearthstoneassesment.domain.model.HearthstoneCardList" />
+                app:argType="com.andrei.hearthstoneassessment.domain.model.HearthstoneCardList" />
             <argument
                 android:name="index"
                 android:defaultValue="0"
@@ -32,10 +32,10 @@
     </fragment>
     <fragment
         android:id="@+id/hearthstoneCardDetailFragment"
-        android:name="com.andrei.hearthstoneassesment.presentation.ui.details.HearthstoneCardDetailFragment"
+        android:name="com.andrei.hearthstoneassessment.presentation.ui.details.HearthstoneCardDetailFragment"
         android:label="HearthstoneCardDetailFragment" />
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.andrei.hearthstoneassesment.presentation.ui.info.AboutFragment"
+        android:name="com.andrei.hearthstoneassessment.presentation.ui.info.AboutFragment"
         android:label="AboutFragment" />
 </navigation>

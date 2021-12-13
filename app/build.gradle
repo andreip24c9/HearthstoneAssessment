@@ -12,7 +12,7 @@ android {
     compileSdk rootProject.ext.compile_sdk
 
     defaultConfig {
-        applicationId "com.andrei.hearthstoneassesment"
+        applicationId "com.andrei.hearthstoneassessment"
         minSdk rootProject.ext.min_sdk
         targetSdk rootProject.ext.compile_sdk
         versionCode 1
@@ -75,13 +75,13 @@ android {
     }
 //    productFlavors {
 //        hearthstone {
-//            applicationId "com.andrei.hearthstoneassesment"
+//            applicationId "com.andrei.hearthstoneasssesment"
 //            dimension "company"
 //            signingConfig signingConfigs.release
 //        }
 //
 ////        whitelabel {
-////            applicationId "com.andrei.hearthstoneassesment.whitelabel"
+////            applicationId "com.andrei.hearthstoneassessment.whitelabel"
 ////            dimension "company"
 ////            signingConfig signingConfigs.whitelabel
 ////        }
@@ -156,7 +156,9 @@ dependencies {
 
     // to change status bar color
     implementation "com.google.accompanist:accompanist-systemuicontroller:0.21.4-beta"
-    
+
+    implementation 'androidx.core:core-splashscreen:1.0.0-alpha02'
+
     // dependency added to fix this issue:
     // Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE
     // be specified when creating a PendingIntent.

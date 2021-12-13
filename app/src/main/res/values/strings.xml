@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HearthstoneAssesment</string>
+    <string name="app_name">HearthstoneAssessment</string>
     <string name="content_description_card_thumbnail">Card thumbnail</string>
     <string name="unown_error_title">Oh no!</string>
     <string name="unown_error_body">Well this is embarrassing …\nAn unexpected error occurred. Please try again later!</string>
