@@ -3,6 +3,7 @@ package com.andrei.hearthstoneassessment.di
 import com.andrei.hearthstoneassessment.network.ApiService
 import com.andrei.hearthstoneassessment.network.model.HearthstoneCardDtoMapper
 import com.andrei.hearthstoneassessment.network.model.HearthstoneCardPaginatedListMapper
+import com.andrei.hearthstoneassessment.presentation.AbstractApplication
 import com.andrei.hearthstoneassessment.presentation.MyApplication
 import com.andrei.hearthstoneassessment.repository.HearthstoneCardsRepository
 import com.andrei.hearthstoneassessment.repository.HearthstoneCardsRepositoryImpl
@@ -32,7 +33,7 @@ object RepositoryModule {
     @Provides
     fun provideMockHearthstoneCardsRepository(
         gson: Gson,
-        application: MyApplication,
+        application: AbstractApplication,
         mapper: HearthstoneCardPaginatedListMapper
     ): MockHearthstoneCardsRepository {
         return MockHearthstoneCardsRepositoryImpl(gson, application, mapper)

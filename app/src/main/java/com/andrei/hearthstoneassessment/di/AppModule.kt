@@ -1,6 +1,7 @@
 package com.andrei.hearthstoneassessment.di
 
 import android.content.Context
+import com.andrei.hearthstoneassessment.presentation.AbstractApplication
 import com.andrei.hearthstoneassessment.presentation.MyApplication
 import dagger.Module
 import dagger.Provides
@@ -16,7 +17,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideApplication(@ApplicationContext app: Context): MyApplication {
-        return app as MyApplication
+    fun provideApplication(@ApplicationContext app: Context): AbstractApplication {
+        return app as AbstractApplication
     }
 }

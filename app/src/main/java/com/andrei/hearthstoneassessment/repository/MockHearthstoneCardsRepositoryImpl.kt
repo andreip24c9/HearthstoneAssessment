@@ -6,6 +6,7 @@ import com.andrei.hearthstoneassessment.domain.model.PaginatedListModel
 import com.andrei.hearthstoneassessment.network.model.HearthstoneCardDTO
 import com.andrei.hearthstoneassessment.network.model.HearthstoneCardPaginatedListMapper
 import com.andrei.hearthstoneassessment.network.response.GenericPaginationResponse
+import com.andrei.hearthstoneassessment.presentation.AbstractApplication
 import com.andrei.hearthstoneassessment.presentation.MyApplication
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -20,7 +21,7 @@ import java.nio.charset.Charset
 @Suppress("BlockingMethodInNonBlockingContext")
 class MockHearthstoneCardsRepositoryImpl(
     private val gson: Gson,
-    private val application: MyApplication,
+    private val application: AbstractApplication,
     private val genericListMapper: HearthstoneCardPaginatedListMapper,
 ) : MockHearthstoneCardsRepository {
 

@@ -20,7 +20,6 @@ import javax.inject.Inject
 class HearthstoneCardListViewModel
 @Inject
 constructor(
-    private val repository: HearthstoneCardsRepository,
     private val mockRepository: MockHearthstoneCardsRepository,
 ) : ViewModel() {
 
@@ -55,7 +54,7 @@ constructor(
 
     var fetchFirstPageJob: Job? = null
     var fetchNextPageJob: Job? = null
-    private fun firstPage() {
+    fun firstPage() {
         cancelAllJobs()
         initialLoadError.value = null
         fetchFirstPageJob = viewModelScope.launch {
@@ -125,7 +124,7 @@ constructor(
         }
     }
 
-    private suspend fun fetchCards(): List<HearthstoneCard> {
+    suspend fun fetchCards(): List<HearthstoneCard> {
         val result = mockRepository.fetchCards(
             category = selectedCategory.value.value,
             cursor = cursor,
